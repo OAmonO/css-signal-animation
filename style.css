@@ -1,23 +1,29 @@
-*
+* 
 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+html, body 
+{
+    height: 100%;
+}
+
 body 
 {
     overflow: hidden;
     background-color: rgb(28, 28, 28);
     position: relative; 
-    height: 100vh; 
 }
-p
+
+p 
 {
-    text-align: center;
-    margin-top: 15px;
     color: white;
     font-size: 35px;
-}    
+    margin: 0;
+}
+
 .bb 
 {
     width: 200px;
@@ -26,9 +32,15 @@ p
     position: absolute; 
     top: 0;
     left: 0;
-    animation: Signal 20s linear infinite alternate;
     border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: Signal 20s linear infinite alternate;
 }
+
 @keyframes Signal 
 {
     0% 
