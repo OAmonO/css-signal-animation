@@ -61,7 +61,8 @@ p
     }
     100% 
     {
-        transform: translate(0, calc(100vh - 50px));
+        transform: translate(0, calc(95vh - 50px));
     }
 }
+
 
