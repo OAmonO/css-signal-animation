@@ -59,10 +59,11 @@ p
     {
         transform: translate(calc(100vw - 200px), 75vh);
     }
-    100% 
+   100% 
     {
-        transform: translate(0, calc(95vh - 50px));
+    transform: translate(0, calc(100 * var(--vh) - 50px));
     }
 }
+
 
 
