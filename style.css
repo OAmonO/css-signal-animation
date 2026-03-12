@@ -4,11 +4,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {
+body 
+{
     overflow: hidden;
     background-color: rgb(28, 28, 28);
     position: relative; 
-    height: 100vh;     
+    height: 100vh; 
+}
 p
 {
     text-align: center;
@@ -16,7 +18,8 @@ p
     color: white;
     font-size: 35px;
 }    
-.bb {
+.bb 
+{
     width: 200px;
     height: 50px;
     background: blue;
@@ -26,20 +29,27 @@ p
     animation: Signal 20s linear infinite alternate;
     border-radius: 10px;
 }
-@keyframes Signal {
-    0% {
+@keyframes Signal 
+{
+    0% 
+    {
         transform: translate(0,0);
     }
-    25% {
+    25% 
+    {
         transform: translate(calc(100vw - 200px), 25vh);
     }
-    50% {
+    50% 
+    {
         transform: translate(0, 50vh);
     }
-    75% {
+    75% 
+    {
         transform: translate(calc(100vw - 200px), 75vh);
     }
-    100% {
+    100% 
+    {
         transform: translate(0, calc(100vh - 50px));
     }
 }
+
