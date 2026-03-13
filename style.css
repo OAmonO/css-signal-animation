@@ -1,29 +1,24 @@
-* 
+*
 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-html, body 
-{
-    height: 100%;
-}
-
 body 
 {
     overflow: hidden;
     background-color: rgb(28, 28, 28);
     position: relative; 
+    height: 100vh; 
 }
-
-p 
+p
 {
+
+    text-align: center;
+    margin-top: 15px;
     color: white;
     font-size: 35px;
-    margin: 0;
-}
-
+}    
 .bb 
 {
     width: 200px;
@@ -32,38 +27,26 @@ p
     position: absolute; 
     top: 0;
     left: 0;
-    border-radius: 10px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     animation: Signal 20s linear infinite alternate;
+    border-radius: 10px;
 }
-
-@keyframes Signal 
-{
-    0% 
-    {
-        transform: translate(0,0);
-    }
-    25% 
-    {
-        transform: translate(calc(100vw - 200px), 25vh);
-    }
-    50% 
-    {
-        transform: translate(0, 50vh);
-    }
-    75% 
-    {
-        transform: translate(calc(100vw - 200px), 75vh);
-    }
-   100% 
-    {
-    transform: translate(0, calc(100 * var(--vh) - 50px));
+@media (max-width: 768px) { /* telefony */
+    @keyframes Signal {
+        0% { transform: translate(0,0); }
+        25% { transform: translate(calc(100vw - 200px), 25vh); }
+        50% { transform: translate(0, 50vh); }
+        75% { transform: translate(calc(100vw - 200px), 75vh); }
+        100% { transform: translate(0, calc(95vh - 50px)); } 
     }
 }
-
+@media (min-width: 769px) { /* komputery / desktop */
+    @keyframes Signal {
+        0% { transform: translate(0,0); }
+        25% { transform: translate(calc(100vw - 200px), 25vh); }
+        50% { transform: translate(0, 50vh); }
+        75% { transform: translate(calc(100vw - 200px), 75vh); }
+        100% { transform: translate(0, calc(100vh - 50px)); } 
+    } 
+}
 
 
